@@ -14,9 +14,8 @@ public class C02_Actions extends TestBase {
         driver.get("https://amazon.com");
         // accont menusunden create a list linkiine tıklayalım
         Actions action=new Actions(driver);
-        WebElement accounLink=driver.findElement(By.xpath("//*[text()='Account & Lists']"));
-        action.moveToElement(accounLink).perform();
-
+        WebElement accountlink=driver.findElement(By.xpath("//*[text()='Account & Lists']"));
+        action.moveToElement(accountlink).perform();
         driver.findElement(By.xpath("//*[text()='Create a List']")).click();
 
     }

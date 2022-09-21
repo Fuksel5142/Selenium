@@ -13,28 +13,27 @@ import java.util.List;
 public class C03_MouseActions extends TestBase {
 
     @Test
-    public void test01(){
+    public void test01() throws InterruptedException {
         //https://the-internet.herokuapp.com/context_menu sitesine gidelim
         driver.get("https://the-internet.herokuapp.com/context_menu");
-        // 3- Cizili alan uzerinde sag click yapalim
-        WebElement cizilialan=driver.findElement(By.id("hot-spot"));
-        Actions action=new Actions(driver);
-        action.moveToElement(cizilialan).contextClick().perform();
+        //Cizili alan bölümün uzerinde sag click yapalim
+        WebElement cizgiliAlan = driver.findElement(By.xpath("//*[@id='hot-spot']"));
+        Actions actions = new Actions(driver);
+        actions.contextClick(cizgiliAlan).perform();
         //Alert’te cikan yazinin “You selected a context menu” oldugunu test edelim.
-        String expectedYazi="You selected a context menu";
-        String actualYazi=driver.switchTo().alert().getText();
-        Assert.assertEquals(expectedYazi,actualYazi);
-       // Tamam diyerek alert’i kapatalim
+        String expectedAlertYazisi = "You selected a context menu";
+        String actualAlertYazisi = driver.switchTo().alert().getText();
+        Assert.assertEquals(expectedAlertYazisi,actualAlertYazisi);
+        //Assert.assertEquals("You selected a context menu",driver.switchTo().alert().getText());
+
+        //Tamam diyerek alert’i kapatalim
+        Thread.sleep(2000);
         driver.switchTo().alert().accept();
-      //  Elemental Selenium linkine tiklayalim
+        //Elemental Selenium linkine tiklayalim
         driver.findElement(By.xpath("//*[text()='Elemental Selenium']")).click();
-        //Acilan sayfada h1 taginda “Elemental Selenium” yazdigini test edelim
-        List<String> windowlist=new ArrayList<String>(driver.getWindowHandles());
+        List<String> windowlist = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(windowlist.get(1));
-        String expectedYazik="Elemental Selenium";
-        String actualYazik=driver.findElement(By.xpath("//h1")).getText();
-        Assert.assertEquals(actualYazik,expectedYazik);
-
+        //Acilan sayfada h1 taginda “Elemental Selenium” yazdigini test edelim
+        Assert.assertEquals("Elemental Selenium",driver.findElement(By.xpath("//h1")).getText());
     }
-
 }
