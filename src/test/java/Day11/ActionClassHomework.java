@@ -23,10 +23,10 @@ public class ActionClassHomework extends TestBase {
         driver.switchTo().alert().accept();
         Thread.sleep(3000);
         //"Click and hold" kutusuna basili tutun
-        WebElement clickandhold=driver.findElement(By.xpath("//*[text()='Dont release me!!!']"));
+        WebElement clickandhold=driver.findElement(By.xpath("//*[@id='click-box']"));
         action.clickAndHold(clickandhold).perform();
         //7-"Click and hold" kutusunda cikan yaziyi yazdirin
-        String click=driver.findElement(By.xpath("(//div[@class='col-lg-12 text-center'])[1]")).getText();
+        String click=driver.findElement(By.xpath("//*[@id='click-box']")).getText();
         System.out.println(click);
          //8- "Double click me" butonunu cift tiklayin
         WebElement doubleclick=driver.findElement(By.xpath("//h2"));
