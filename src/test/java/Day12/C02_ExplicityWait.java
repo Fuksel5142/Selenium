@@ -64,19 +64,7 @@ public class C02_ExplicityWait extends TestBase {
 
 
 
-                Cookies
-                2 çeşittir.
-                1) oturum çerezi -  bizim ip gibi bilgilerimizi serverda tutup bir daha bize soru sormuyor.
-                Oturum çerezleri yalnızca bir web sitesinde gezinirken kullanılır.
-                Bunlar rastgele erişimli bellekte saklanır ve hiçbir zaman sabit sürücüye yazılmaz.
-                Oturum sona erdiğinde oturum çerezleri otomatik olarak silinir.
 
-                2) kalıcı çerezler - Kalıcı çerezler bir bilgisayarda sonsuza kadar kalır
-                ancak birçoğunun bir son kullanma tarihi olup bu tarihe gelindiğinde otomatik olarak kaldırılırlar.
-
-                *** Üçüncü taraf çerezler daha sıkıntılıdır. Bunlar, genellikle kullanıcıların halihazırda
-                gezindiği web sayfalarındaki reklamlarla bağlantılı olduklarından bu sayfalardan farklı
-                web siteleri tarafındanoluşturulur.
 
      */
 
