@@ -36,7 +36,8 @@ public class odev2 extends TestBase {
         //  8.Ok diyerek Popup'i kapatin// Ilk sayfaya geri donun
         driver.switchTo().alert().accept();
         driver.switchTo().window(loginPage.get(0));
-       //  Ilk sayfaya donuldugunu test edin
+       //git push
+        // git  Ilk sayfaya donuldugunu test edin
         Assert.assertTrue(driver.getTitle().contains(actualtitle) );
     }
 }
