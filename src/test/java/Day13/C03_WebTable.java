@@ -30,6 +30,13 @@ public class C03_WebTable extends TestBase {
         action.click(username).sendKeys("manager")
                 .sendKeys(Keys.TAB).sendKeys("Manager1!").
                 sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
+           /*
+Tabloda<table> tagı altinda tablonun basligini gösteren <thead> tag'i bulunur.
+Eger baslikta satir(row) varsa <thead> tag'i altinda <tr> (satir-row) tagi vardir.
+Ve basliktaki sutunlara yani hucrelere(cell) de <th> tag' ile ulasilir.
+Basligin altindaki verilere <tbody> tag'i ile altindaki satirlara(row) <tr> tag'i ile
+sutunlara yani hucrelere<td> tag'i ile ulasilir.
+ */
 
     }
 }
