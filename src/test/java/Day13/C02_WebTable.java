@@ -12,9 +12,9 @@ import java.util.List;
 public class C02_WebTable extends TestBase {
     @Test
     public void test1() {
-     //  login( ) metodun oluşturun ve oturum açın.
+     /////  login( ) metodun oluşturun ve oturum açın.
         login();
-        //Tüm table body’sinin boyutunu(sutun sayisi) bulun.
+        ////Tüm table body’sinin boyutunu(sutun sayisi) bulun.
       List<WebElement> sutunBaslıklarıListesi=driver.findElements(By.xpath("//thead//tr[1]//th"));
         System.out.println("Sütünsayisi: "+sutunBaslıklarıListesi.size());
         //Table’daki tum body’I ve başlıkları(headers) konsolda yazdırın.
