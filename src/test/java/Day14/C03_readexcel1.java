@@ -17,7 +17,7 @@ public class C03_readexcel1 {
         // O cell'deki datayi String olarak bana donduren bir method olusturun
         int satirNo=12;
         int sutunNo=2;
-        // donen String'in Cezayir oldugunu test edin
+        // donen String'in Cezayir oldugunu test edingeggeg
         String expectedData="Baku";
         String actualData= banadaGetir(satirNo-1,sutunNo-1);
         Assert.assertEquals(expectedData, actualData);
