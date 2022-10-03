@@ -48,6 +48,6 @@ public class TestCase13 extends TestBase {
         String actualQuantity = cartQuantity.getText();
         String expectedQuantity = "4";
 
-        Assert.assertEquals(expectedQuantity, actualQuantity);
+        Assert.assertEquals(expectedQuantity, actualQuantity);//
     }
 }
