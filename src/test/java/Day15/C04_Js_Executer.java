@@ -17,7 +17,7 @@ public class C04_Js_Executer extends TestBase {
         Thread.sleep(3000);
         jse.executeScript("arguments[0].scrollIntoView(true);", signInButonu);
         // sign in butonuna js ile click yapalim
-        jse.executeScript("arguments[0].click();", signInButonu);/
+        jse.executeScript("arguments[0].click();", signInButonu);
         Thread.sleep(3000);
     }
 
