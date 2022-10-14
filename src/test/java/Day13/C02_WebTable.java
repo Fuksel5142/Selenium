@@ -60,7 +60,7 @@ public class C02_WebTable extends TestBase {
         actions.click(username).
                 sendKeys("manager").
                 sendKeys(Keys.TAB).
-                sendKeys("Manager1!").//
+                sendKeys("Manager1!").///
                 sendKeys(Keys.ENTER).
                 perform();
 
